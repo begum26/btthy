@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+
+  <p>Please enter your name:</p>
+  <input #box (keyup)="0">
+  <p>{{box.value}}</p>
+  
+<div>
+  <a routerLinkActive="active" [routerLink]="['/survey/']"></a><button (click)="gotoSurvey('/survey')">Start Survey</button>
+
+
+</div>
+  <router-outlet></router-outlet>
+
+ <!-- <app-survey [newValue]="box.value"></app-survey>  -->
+
+           
